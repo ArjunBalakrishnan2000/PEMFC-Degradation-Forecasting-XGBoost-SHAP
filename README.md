@@ -7,7 +7,7 @@ The framework consists of two main stages:
 
 2. **Recursive Walk-Forward Forecasting:** A multi-step autoregressive XGBoost model featuring periodic 24-hour re-anchoring to simulate real-world operational health monitoring.
 
-3. ## 🧬 Background & Physical Baseline
+3. **🧬 Background & Physical Baseline
 
 Rather than predicting raw stack output voltage directly, the degradation target is normalized against a baseline polarization curve to account for dynamic current operating points:
 
@@ -25,7 +25,7 @@ To eliminate non-stationary drift and focus on operational degradation drivers, 
 * **Exogenous Persistence Modeling:** Assumes zero-order hold for operational variables during multi-step horizons.
 * **Periodic 24-Hour Re-Anchoring:** Resets accumulated numerical integration drift back to ground-truth physical state measurements every 24 operating hours, modeling periodic maintenance diagnostic routines.
 
-* ## 📊 Evaluation & Metrics
+  ## 📊 Evaluation & Metrics
 
 The model is evaluated on an unseen out-of-sample test split (20%) using:
 * **MAE:** 0.1765(Mean Absolute Error on reconstructed voltage loss (%))
