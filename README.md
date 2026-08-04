@@ -28,9 +28,9 @@ To eliminate non-stationary drift and focus on operational degradation drivers, 
 * ## 📊 Evaluation & Metrics
 
 The model is evaluated on an unseen out-of-sample test split (20%) using:
-* **MAE:** Mean Absolute Error on reconstructed voltage loss (%)
-* **RMSE:** Root Mean Squared Error
-* **$R^2$ Score:** Coefficient of Determination
+* **MAE:** 0.1765(Mean Absolute Error on reconstructed voltage loss (%))
+* **RMSE:** 0.2740(Root Mean Squared Error)
+* **R^2 Score:** 0.8892(Coefficient of Determination)
 
 * ## 🛠️ Stack
 * **Python 3.9+**
