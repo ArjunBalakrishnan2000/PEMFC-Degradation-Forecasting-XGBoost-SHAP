@@ -7,7 +7,7 @@ The framework consists of two main stages:
 
 2. **Recursive Walk-Forward Forecasting:** A multi-step autoregressive XGBoost model featuring periodic 24-hour re-anchoring to simulate real-world operational health monitoring.
 
-3. **🧬 Background & Physical Baseline
+3. 🧬 Background & Physical Baseline
 
 Rather than predicting raw stack output voltage directly, the degradation target is normalized against a baseline polarization curve to account for dynamic current operating points:
 
